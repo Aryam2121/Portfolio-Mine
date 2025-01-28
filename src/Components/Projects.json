@@ -1,5 +1,13 @@
 [
     {
+      "Name": "SANGAM: SIH Project",
+      "Desc": "Developed a user-interactive platform using React.js, Node.js, Express.js, MongoDB, Leaflet.js, Mapbox, and Tailwind CSS titled ”Inter-Departmental Cooperation Platform for Smart Cities”. This digital platform, Sangam, was created to enhance inter-departmental coordination at the city level for the Ministry of Housing and Urban Affairs (Smart Cities Mission) as part of Smart India Hackathon (SIH) 2024.\n• APIs Integration: Implemented real-time data sharing using REST APIs to create visualizations, perform calculations, and display KPIs, applying filters and maps to provide level-wise insights from the data.\n• The intent was to provide valuable insights from the data to help states analyze their growth at various levels and make data-driven decisions.",
+      "GithubLink": "https://github.com/harshitbhardwaj-09/Sangam-frontend",
+      "Demo": "",
+      "ImgSrc": "./Sangam.png"
+    },
+  
+    {
       "Name": " TextUtils - word counter, character counter, remove extra spaces",
       "Desc": "TextUtils is a powerful and versatile text processing tool that offers a range of features for analyzing and manipulating text. With a user-friendly interface, TextUtils includes a word counter, character counter, and a feature to remove extra spaces from text. Additionally, users can generate a text summary to view the total word and character count, as well as an estimated reading time. The tool also allows users to preview their text for easy editing and formatting.",
       "GithubLink": "https://github.com/Aryam2121/textutils.react.app",
@@ -8,35 +16,25 @@
     },
   
     {
-      "Name": "House price detector",
-      "Desc": "A machine learning based web application that tells enables users to estimate and predict prices of houses in Bengaluru with an accuracy of 87% based on features like locality, total area, number of bedrooms, etc.",
-      "GithubLink": "",
-      "Demo": "",
-      "ImgSrc": "./project2.avif"
+      "Name": "Productivity and Safety Management of Coal Mines",
+       "Desc": "Developed a digital shift handover log system for coal mines to improve productivity and ensure safety compliance according to DGMS guidelines. Integrated real-time data tracking and safety incident reporting features using React.js and Node.js for seamless data entry and access. Designed and implemented a safety management plan (SMP) in compliance with industry standards, allowing the management to effectively monitor and improve mine safety. Developed dashboards and visualizations, workforce performance, and incident trends for better decision-making. Enabled data-driven decisions for safety management and productivity improvements through real-time performance insights and KPIs.",
+      "GithubLink": "https://github.com/Aryam2121/Coal-mines_",
+      "Demo": "https://safety-management-for-coal-mines.vercel.app/",
+      "ImgSrc": "./CoalMine.png"
     },
-  
+    {
+      "Name": "PayManni",
+      "Desc": "• Developed a PayManni using React.js for frontend, Node.js and Express.js for backend, and MongoDB for data storage, allowing users to create accounts, add money, and make payments. • Implemented user authentication and authorization using JWT tokens for secure login and registration. • Integrated Stripe API to handle online payments securely, supporting features like wallet top-ups and transaction history. • Designed a responsive and modern UI using Tailwind CSS to ensure a seamless user experience on both desktop and mobile devices. • Added features like transaction management, user dashboard, and payment history to enhance user engagement.",
+      "GithubLink": "https://github.com/Aryam2121/PayManni-F",
+      "Demo": "https://pay-manni.vercel.app/",
+      "ImgSrc": "./PayManni.png"
+    },
     {
       "Name": "NewsDose",
       "Desc": "NewsDose is a web application designed to provide the latest news headlines from around the world in various categories such as business, entertainment, sports, technology, and more. Built with React.js, the app features a clean and intuitive user interface, making it easy to navigate and browse news articles. NewsDose leverages NewsAPI to deliver real-time news and employs infinite scrolling for a seamless reading experience. Users can customize their news feed according to their interests and location, while interactive loading spinners enhance the user experience during data fetching. Dynamic routing with React Router DOM allows for smooth navigation between categories. The app is built with React.js and Bootstrap for modern design and hosted on Vercel for high performance and reliability..",
       "GithubLink": "https://github.com/Aryam2121/News-app",
       "Demo": "https://news-dose-blue.vercel.app/",
       "ImgSrc": "./project3.png"
-    },
-  
-    {
-      "Name": "Customer Segmentation using Unsupervised Machine Learning",
-      "Desc": "Performed customer segmentation with an aim to discover natural groups in the unlabelled mall customer dataset with the help of unsupervised clustering ML algorithms. A comparison was shown between the K-Means, DBSCAN & Hierarchical clustering algorithms.",
-      "GithubLink": "",
-      "Demo": "",
-      "ImgSrc": "./project4.png"
-    },
-  
-    {
-      "Name": "Movie Recommender System",
-      "Desc": "Created and deployed a content based movie recommender system on Streamlit cloud that fetches data from TMDB API & recommends movies using cosine similarity scores.",
-      "GithubLink": "",
-      "Demo": "",
-      "ImgSrc": "./project5.jpeg"
     }
   ]
   
