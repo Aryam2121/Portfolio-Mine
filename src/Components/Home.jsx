@@ -99,7 +99,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Software Developer & Data Engineer
+          Software Developer
         </motion.p>
 
         {/* Social Links with Hover Animations */}
