@@ -110,7 +110,7 @@ export default function Home() {
             ariaLabel="Email Aryaman Gupta"
           />
           <SocialLink
-          href="https://drive.google.com/file/d/1bSvw7G-OglSu3rcLx0IR73nY74O2jKCJ/view?usp=drive_link"  // Path to the PDF
+          href="https://drive.google.com/file/d/1WdEydFc0wBB5IoBcy6XSpmio42I8_fyi/view?usp=drive_link"  
           iconClass="fa-solid fa-file-lines"
           ariaLabel="Download Resume"
           download="AryamanGuptaResume.pdf" 
