@@ -3,7 +3,7 @@
       "Name": "SANGAM: SIH Project",
       "Desc": "Developed a user-interactive platform using React.js, Node.js, Express.js, MongoDB, Leaflet.js, Mapbox, and Tailwind CSS titled ”Inter-Departmental Cooperation Platform for Smart Cities”. This digital platform, Sangam, was created to enhance inter-departmental coordination at the city level for the Ministry of Housing and Urban Affairs (Smart Cities Mission) as part of Smart India Hackathon (SIH) 2024.\n• APIs Integration: Implemented real-time data sharing using REST APIs to create visualizations, perform calculations, and display KPIs, applying filters and maps to provide level-wise insights from the data.\n• The intent was to provide valuable insights from the data to help states analyze their growth at various levels and make data-driven decisions.",
       "GithubLink": "https://github.com/harshitbhardwaj-09/Sangam-frontend",
-      "Demo": "",
+      "Demo": "https://sangam-frontend-two.vercel.app/",
       "ImgSrc": "./Sangam.png"
     },
   
@@ -19,7 +19,7 @@
       "Name": "Productivity and Safety Management of Coal Mines",
        "Desc": "Developed a digital shift handover log system for coal mines to improve productivity and ensure safety compliance according to DGMS guidelines. Integrated real-time data tracking and safety incident reporting features using React.js and Node.js for seamless data entry and access. Designed and implemented a safety management plan (SMP) in compliance with industry standards, allowing the management to effectively monitor and improve mine safety. Developed dashboards and visualizations, workforce performance, and incident trends for better decision-making. Enabled data-driven decisions for safety management and productivity improvements through real-time performance insights and KPIs.",
       "GithubLink": "https://github.com/Aryam2121/Coal-mines_",
-      "Demo": "https://safety-management-for-coal-mines.vercel.app/",
+      "Demo": "https://coal-mine-sepia.vercel.app/",
       "ImgSrc": "./CoalMine.png"
     },
     {
