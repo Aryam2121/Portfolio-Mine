@@ -59,78 +59,59 @@ import { motion } from "framer-motion";
 export default function ProjectCard(props) {
   return (
     <motion.div
-      className="project-container flex flex-col items-center p-6"
-      style={{
-        borderRadius: "15px",
-        border: "1px solid #4ade80",
-        minWidth: "20rem",
-        maxWidth: "20rem",
-        minHeight: "15rem",
-        overflow: "hidden",
-        boxShadow: "0 8px 15px rgba(0, 0, 0, 0.1)",
-        backgroundColor: "#1e293b",
-        transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease",
-      }}
-      initial={{ opacity: 0, y: 50 }} // Initially hidden and below
-      animate={{ opacity: 1, y: 0 }} // Fade in and slide up to normal position
+      className="relative flex flex-col items-center p-6 min-w-[20rem] max-w-[22rem] min-h-[20rem] rounded-3xl bg-white/10 backdrop-blur-xl border border-transparent shadow-xl transition-all group"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       whileHover={{
-        scale: 1.05, // Slightly enlarge the card on hover
-        boxShadow: "0 15px 30px rgba(0, 0, 0, 0.2)", // Larger shadow on hover
-        cursor: "pointer",
-        rotate: -2, // Slight tilt on hover for more 3D effect
+        scale: 1.07,
+        rotate: -2,
+        boxShadow: "0px 15px 40px rgba(0, 255, 255, 0.3)",
       }}
-      whileTap={{
-        scale: 0.98, // Slight shrink on click to simulate tap effect
-      }}
+      whileTap={{ scale: 0.98 }}
     >
-      <img
-        src={props.ImgSrc}
-        alt={props.Name}
-        className="rounded-lg mb-5"
-        style={{
-          height: "12rem",
-          width: "100%",
-          objectFit: "cover",
-          borderRadius: "12px",
-          transition: "transform 0.3s ease",
-        }}
-      />
-      <h4
-        className="text-white font-semibold mb-2 text-xl"
-        style={{
-          minHeight: "3rem",
-          transition: "color 0.3s ease, transform 0.3s ease",
-        }}
+       {/* ✅ FIX: Buttons visible even on hover */}
+      {/* Neon Border Layer - Now below buttons (z-index -1) */}
+      {/* ✅ FIX: Overlay won't block buttons anymore */}
+      <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-br from-teal-500 to-blue-500 opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10">
+        <div className="h-full w-full bg-slate-950 rounded-3xl"></div>
+      </div>
+
+      {/* Floating Glow Effect (Now behind everything) */}
+      <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 via-transparent to-blue-500/20 rounded-3xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10"></div>
+
+      {/* Project Image with Hover Flip Effect */}
+      <motion.div
+        className="relative w-full h-48 rounded-2xl overflow-hidden"
+        whileHover={{ scale: 1.05 }}
       >
+        <motion.img
+          src={props.ImgSrc}
+          alt={props.Name}
+          className="object-cover w-full h-full rounded-2xl transition-transform duration-300 group-hover:rotate-1"
+        />
+      </motion.div>
+
+      {/* Project Name */}
+      <h4 className="text-white font-semibold text-lg sm:text-xl text-center mt-3 transition-all">
         {props.Name}
       </h4>
-      <p
-        className="text-gray-300 text-sm"
-        style={{
-          flexGrow: "1",
-          transition: "color 0.3s ease",
-          opacity: 0.85,
-        }}
-      >
+
+      {/* Project Description */}
+      <p className="text-gray-300 text-sm text-center px-2 opacity-85 mt-2 flex-grow">
         {props.Desc}
       </p>
-      <div className="mt-5 mb-3 flex justify-start gap-4">
+
+      {/* Buttons: GitHub & Demo */}
+      <div className="mt-4 flex justify-center gap-4">
         {props.GithubLink && (
           <motion.a
             href={props.GithubLink}
-            className="btn px-7 py-2 rounded-md text-white"
-            style={{
-              backgroundColor: "#10b981",
-              border: "1px solid #10b981",
-            }}
+            className="px-6 py-2 rounded-full text-white text-sm font-medium transition-all bg-gradient-to-r from-teal-500 to-cyan-500 shadow-md"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{
-              backgroundColor: "#0f9d5f",
-              scale: 1.1, // Slightly enlarge on hover
-            }}
-            whileTap={{ scale: 0.95 }} // Shrink effect when clicked
+            whileHover={{ scale: 1.1, backgroundColor: "#0f766e" }}
+            whileTap={{ scale: 0.95 }}
           >
             GitHub
           </motion.a>
@@ -138,18 +119,11 @@ export default function ProjectCard(props) {
         {props.Demo && (
           <motion.a
             href={props.Demo}
-            className="btn px-7 py-2 rounded-md text-white"
-            style={{
-              backgroundColor: "#3b82f6",
-              border: "1px solid #3b82f6",
-            }}
+            className="px-6 py-2 rounded-full text-white text-sm font-medium transition-all bg-gradient-to-r from-blue-500 to-indigo-500 shadow-md"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{
-              backgroundColor: "#2563eb",
-              scale: 1.1, // Slightly enlarge on hover
-            }}
-            whileTap={{ scale: 0.95 }} // Shrink effect when clicked
+            whileHover={{ scale: 1.1, backgroundColor: "#2563eb" }}
+            whileTap={{ scale: 0.95 }}
           >
             Demo
           </motion.a>

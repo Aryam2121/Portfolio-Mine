@@ -3,104 +3,50 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <motion.div
-      className="footer bg-slate-900 py-5 mx-auto"
-      style={{ zIndex: 100, position: "relative" }}
+    <motion.footer
+      className="relative bg-gradient-to-b from-slate-900 to-gray-950 py-8 text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
-      <p className="footer-tagline text-white font-medium text-center text-xl md:text-2xl mb-4">
-        Connect with me
+      {/* Tagline */}
+      <p className="text-white font-semibold text-xl md:text-2xl tracking-wide">
+        Let's Connect
       </p>
-      <ul className="socials-container flex gap-x-6 justify-center my-3">
-        {/* Social Links with Hover Effects */}
-        <motion.li
-          whileHover={{
-            scale: 1.3,
-            rotate: 15,
-            transition: { duration: 0.3, ease: "easeOut" },
-          }}
-        >
-          <a
-            href="mailto:aryamangupta2121@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Email Aryaman Gupta"
+
+      {/* Social Links with Glow Effect */}
+      <ul className="flex gap-x-8 justify-center mt-4">
+        {[
+          { href: "mailto:aryamangupta2121@gmail.com", icon: "fa-solid fa-envelope socials-icon text-white text-2xl", label: "Email" },
+          { href: "https://github.com/Aryam2121", icon: "fa-github", label: "GitHub" },
+          { href: "https://www.linkedin.com/in/aryaman-gupta-b077b2257/", icon: "fa-linkedin", label: "LinkedIn" },
+          { href: "https://twitter.com/AryamanGupta21", icon: "fa-twitter", label: "Twitter" },
+          { href: "https://www.instagram.com/_aryaman_gupta_01/", icon: "fa-instagram", label: "Instagram" }
+        ].map((social, index) => (
+          <motion.li
+            key={index}
+            whileHover={{ scale: 1.2, textShadow: "0px 0px 12px rgba(0, 255, 255, 0.7)" }}
+            whileTap={{ scale: 0.95 }}
           >
-            <i className="fa-solid fa-envelope socials-icon text-white text-2xl"></i>
-          </a>
-        </motion.li>
-        <motion.li
-          whileHover={{
-            scale: 1.3,
-            rotate: 15,
-            transition: { duration: 0.3, ease: "easeOut" },
-          }}
-        >
-          <a
-            href="https://github.com/Aryam2121"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Profile"
-          >
-            <i className="fa-brands fa-github socials-icon text-white text-2xl"></i>
-          </a>
-        </motion.li>
-        <motion.li
-          whileHover={{
-            scale: 1.3,
-            rotate: 15,
-            transition: { duration: 0.3, ease: "easeOut" },
-          }}
-        >
-          <a
-            href="https://www.linkedin.com/in/aryaman-gupta-b077b2257/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn Profile"
-          >
-            <i className="fa-brands fa-linkedin socials-icon text-white text-2xl"></i>
-          </a>
-        </motion.li>
-        <motion.li
-          whileHover={{
-            scale: 1.3,
-            rotate: 15,
-            transition: { duration: 0.3, ease: "easeOut" },
-          }}
-        >
-          <a
-            href="https://twitter.com/AryamanGupta21"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter Profile"
-          >
-            <i className="fa-brands fa-twitter socials-icon text-white text-2xl"></i>
-          </a>
-        </motion.li>
-        <motion.li
-          whileHover={{
-            scale: 1.3,
-            rotate: 15,
-            transition: { duration: 0.3, ease: "easeOut" },
-          }}
-        >
-          <a
-            href="https://www.instagram.com/_aryaman_gupta_01/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram Profile"
-          >
-            <i className="fa-brands fa-instagram socials-icon text-white text-2xl"></i>
-          </a>
-        </motion.li>
+            <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
+              <i className={`fa-brands ${social.icon} text-white text-3xl transition-all`}></i>
+            </a>
+          </motion.li>
+        ))}
       </ul>
 
-      <hr className="horizontal-line border-gray-700 my-4" />
-      <p className="copyright text-gray-400 text-center text-xs mt-4 mb-2">
+      {/* Glowing Horizontal Divider */}
+      <motion.div
+        initial={{ opacity: 0, width: "0%" }}
+        animate={{ opacity: 1, width: "100%" }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className="mt-6 h-[3px] bg-gradient-to-r from-transparent via-sky-500 to-transparent shadow-lg shadow-sky-500 rounded-full mx-auto w-full max-w-5xl"
+      ></motion.div>
+
+      {/* Copyright Text */}
+      <p className="text-gray-400 text-sm mt-4">
         Made with <span className="text-red-500">❤️</span> by Aryaman Gupta
       </p>
-    </motion.div>
+    </motion.footer>
   );
 }

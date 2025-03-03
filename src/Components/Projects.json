@@ -2,7 +2,7 @@
     {
       "Name": "SANGAM: SIH Project",
       "Desc": "Developed a user-interactive platform using React.js, Node.js, Express.js, MongoDB, Leaflet.js, Mapbox, and Tailwind CSS titled ”Inter-Departmental Cooperation Platform for Smart Cities”. This digital platform, Sangam, was created to enhance inter-departmental coordination at the city level for the Ministry of Housing and Urban Affairs (Smart Cities Mission) as part of Smart India Hackathon (SIH) 2024.\n• APIs Integration: Implemented real-time data sharing using REST APIs to create visualizations, perform calculations, and display KPIs, applying filters and maps to provide level-wise insights from the data.\n• The intent was to provide valuable insights from the data to help states analyze their growth at various levels and make data-driven decisions.",
-      "GithubLink": "https://github.com/harshitbhardwaj-09/Sangam-frontend",
+      "GithubLink": "https://github.com/Aryam2121/Sangam",
       "Demo": "https://sangam-frontend-two.vercel.app/",
       "ImgSrc": "./Sangam.png"
     },
