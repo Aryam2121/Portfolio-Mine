@@ -53,7 +53,7 @@ export default function Home() {
         {/* Social Links with 3D Effect */}
         <div className="text-white text-3xl md:text-4xl flex gap-8 mt-6">
           <SocialLink href="mailto:aryamangupta2121@gmail.com" iconClass="fa-solid fa-envelope" ariaLabel="Email" />
-          <SocialLink href="https://drive.google.com/file/d/1WdEydFc0wBB5IoBcy6XSpmio42I8_fyi/view?usp=drive_link" iconClass="fa-solid fa-file-lines" ariaLabel="Download Resume" />
+          <SocialLink href="https://drive.google.com/file/d/1WdEydFc0wBB5IoBcy6XSpmio42I8_fyi/view?usp=drive_link" iconClass="fa-solid fa-user-tie" ariaLabel="Download Resume" />
           <SocialLink href="https://www.linkedin.com/in/aryaman-gupta-b077b2257/" iconClass="fa-brands fa-linkedin" ariaLabel="LinkedIn" />
           <SocialLink href="https://github.com/Aryam2121" iconClass="fa-brands fa-github" ariaLabel="GitHub" />
           <SocialLink href="https://twitter.com/AryamanGupta21" iconClass="fa-brands fa-twitter" ariaLabel="Twitter" />
