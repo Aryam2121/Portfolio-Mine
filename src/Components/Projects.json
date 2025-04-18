@@ -27,7 +27,7 @@
       "Desc": "• Developed a PayManni using React.js for frontend, Node.js and Express.js for backend, and MongoDB for data storage, allowing users to create accounts, add money, and make payments. • Implemented user authentication and authorization using JWT tokens for secure login and registration. • Integrated Stripe API to handle online payments securely, supporting features like wallet top-ups and transaction history. • Designed a responsive and modern UI using Tailwind CSS to ensure a seamless user experience on both desktop and mobile devices. • Added features like transaction management, user dashboard, and payment history to enhance user engagement.",
       "GithubLink": "https://github.com/Aryam2121/PayManni-F",
       "Demo": "https://pay-manni.vercel.app/",
-      "ImgSrc": "./Paymanni.png"
+      "ImgSrc": "./Paymannidash.png"
     },
     {
       "Name": "NewsDose",
